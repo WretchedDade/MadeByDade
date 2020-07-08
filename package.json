@@ -1,0 +1,33 @@
+{
+	"name": "wretcheddade.github.io",
+	"version": "1.0.0",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/WretchedDade/WretchedDade.github.io.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/WretchedDade/WretchedDade.github.io/issues"
+	},
+	"homepage": "https://github.com/WretchedDade/WretchedDade.github.io#readme",
+	"main": "index.html",
+	"scripts": {
+		"build:css": "postcss styles/*.css -d styles/generated",
+		"watch:css": "postcss styles/*.css -d styles/generated -w",
+		"build:scripts": "tsc",
+		"watch:scripts": "tsc -w",
+		"watch": "run-p watch:css watch:scripts",
+		"build": "run-p build:css build:scripts"
+	},
+	"dependencies": {
+		"postcss": "^7.0.32",
+		"tailwindcss": "^1.4.6"
+	},
+	"devDependencies": {
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^7.1.1",
+		"typescript": "^3.9.6"
+	}
+}

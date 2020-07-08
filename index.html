@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>My first three.js app</title>
-		<style>
-			body { margin: 0; }
-			canvas { display: block; }
-		</style>
+		<meta charset="utf-8" />
+		<title>Dade Cook</title>
+		<link rel="stylesheet" href="styles/generated/main.css" />
 	</head>
-	<body>
-		<script src="js/three.js"></script>
-		<script>
-			// Our Javascript will go here.
-		</script>
+	<body class="font-sans">
+		<header class="text-white bg-blue-700 p-4 flex flex-wrap justify-between content-end">
+			<h1 class="text-3xl">Dade Cook</h1>
+			<button id="nav-toggle" class="sm:hidden p-3 mx-2 rounded-full focus:outline-none hover:bg-opacity-25 hover:bg-blue-900">
+				<!-- Icons are from the Zondicons icon pack available here: http://www.zondicons.com/ -->
+				<svg id="nav-menu-icon" class="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+				</svg>
+				<svg id="nav-close-icon" class="hidden fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<path
+						d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+					/>
+				</svg>
+			</button>
+			<nav class="h-0 sm:h-auto overflow-hidden w-full sm:w-auto flex flex-col sm:flex-row">
+				<a
+					class="text-lg sm:self-end py-1 px-4 sm:px-2 my-1 sm:my-0 sm:mx-1 rounded-sm bg-blue-900 bg-opacity-0 hover:bg-opacity-25 border-l-8 sm:border-l-0 sm:border-b-4 border-transparent hover:border-blue-900"
+					href="/about"
+				>
+					About
+				</a>
+				<a
+					class="text-lg sm:self-end py-1 px-4 sm:px-2 my-1 sm:my-0 sm:mx-1 rounded-sm bg-blue-900 bg-opacity-0 hover:bg-opacity-25 border-l-8 sm:border-l-0 sm:border-b-4 border-transparent hover:border-blue-900"
+					href="/projects"
+				>
+					Projects
+				</a>
+				<a
+					class="text-lg sm:self-end py-1 px-4 sm:px-2 my-1 sm:my-0 sm:mx-1 rounded-sm bg-blue-900 bg-opacity-0 hover:bg-opacity-25 border-l-8 sm:border-l-0 sm:border-b-4 border-transparent hover:border-blue-900"
+					href="/contact"
+				>
+					Contact Me
+				</a>
+			</nav>
+		</header>
+		<main></main>
+		<footer></footer>
+		<script src="scripts/index.js"></script>
 	</body>
 </html>
