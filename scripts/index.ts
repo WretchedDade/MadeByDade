@@ -9,5 +9,5 @@ header.toggle?.addEventListener('click', () => {
 	header.menuIcon?.classList.toggle('hidden');
 	header.closeIcon?.classList.toggle('hidden');
 
-	header.nav?.classList.toggle('h-0');
+	header.nav?.classList.toggle('hidden');
 });

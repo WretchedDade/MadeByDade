@@ -10,5 +10,5 @@ var header = {
     var _a, _b, _c;
     (_a = header.menuIcon) === null || _a === void 0 ? void 0 : _a.classList.toggle('hidden');
     (_b = header.closeIcon) === null || _b === void 0 ? void 0 : _b.classList.toggle('hidden');
-    (_c = header.nav) === null || _c === void 0 ? void 0 : _c.classList.toggle('h-0');
+    (_c = header.nav) === null || _c === void 0 ? void 0 : _c.classList.toggle('hidden');
 });

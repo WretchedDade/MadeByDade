@@ -1,0 +1,14 @@
+.avatar {
+  border-radius: 9999px;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  /* @apply bg-opacity-50; */
+  height: 8rem;
+  width: 8rem;
+  margin-left: 1rem;
+  --border-opacity: 1;
+  border-color: #2f855a;
+  border-color: rgba(47, 133, 90, var(--border-opacity));
+  border-width: 4px;
+}

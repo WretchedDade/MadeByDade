@@ -1,0 +1,13 @@
+.avatar {
+	@apply rounded-full;
+	@apply bg-white;
+	/* @apply bg-opacity-50; */
+
+	@apply h-32;
+	@apply w-32;
+
+	@apply ml-4;
+
+	@apply border-green-700;
+	@apply border-4;
+}
