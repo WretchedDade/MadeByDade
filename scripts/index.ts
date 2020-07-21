@@ -1,3 +1,5 @@
+const body = document.querySelector('body');
+
 const header = {
 	nav: document.querySelector('nav'),
 	toggle: document.getElementById('nav-toggle'),
@@ -8,6 +10,8 @@ const header = {
 header.toggle?.addEventListener('click', () => {
 	header.menuIcon?.classList.toggle('hidden');
 	header.closeIcon?.classList.toggle('hidden');
+
+	body?.classList.toggle('overflow-hidden');
 
 	header.nav?.classList.toggle('hidden');
 });

@@ -1,0 +1,37 @@
+label {
+	@apply block;
+	@apply uppercase;
+	@apply tracking-wide;
+	@apply text-gray-700;
+	@apply text-xs;
+	@apply font-bold;
+	@apply mb-2;
+}
+
+p.helper-text {
+	@apply text-gray-600;
+	@apply text-xs;
+	@apply italic;
+}
+
+input,
+textarea {
+	@apply appearance-none;
+	@apply block;
+	@apply w-full;
+	@apply bg-gray-200;
+	@apply text-gray-700;
+	@apply border;
+	@apply border-gray-200;
+	@apply rounded;
+	@apply py-3;
+	@apply px-4;
+	@apply leading-tight;
+}
+
+input:focus,
+textarea:focus {
+	@apply outline-none;
+	@apply bg-white;
+	@apply border-gray-500;
+}
