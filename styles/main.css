@@ -1,5 +1,9 @@
 @tailwind base;
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	@apply font-sans;
 	@apply bg-gray-200;
@@ -27,7 +31,7 @@ header {
 }
 
 main {
-	min-height: calc(100vh - 80px);
+	min-height: calc(100vh - 80px - 40px);
 }
 
 nav {
@@ -107,6 +111,12 @@ i.hidden {
 	a.nav-link {
 		@apply self-end px-2 my-0 mx-1 border-l-0 border-b-4;
 	}
+}
+
+footer {
+	@apply bg-blue-900;
+
+	min-height: 40px;
 }
 
 @tailwind components;

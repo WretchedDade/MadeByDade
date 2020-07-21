@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html id="top">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" href="assets/favicon.png" type="image/png" />
 
 		<title>Dade Cook | Experience</title>
 
@@ -35,13 +37,10 @@
 				id="nav-toggle"
 				class="sm:hidden icon-button h-10 w-10 z-40 box-content"
 			>
-				<i
-					id="nav-menu-icon"
-					class="fill-current fas fa-bars fa-2x fa-fw"
-				></i
+				<i id="nav-menu-icon" class="fas fa-bars fa-2x fa-fw"></i
 				><i
 					id="nav-close-icon"
-					class="fill-current fas fa-window-close fa-2x fa-fw hidden"
+					class="fas fa-window-close fa-2x fa-fw hidden"
 				></i>
 			</button>
 		</header>
@@ -221,8 +220,16 @@
 					<h3 class="time-title">November 2016</h3>
 				</div>
 			</div>
+			<a
+				id="scroll-to-top"
+				href="#top"
+				class="text-green-700 opacity-0 fixed bottom-0 right-0 m-4"
+			>
+				<i class="fas fa-chevron-circle-up fa-3x fa-fw"></i>
+			</a>
 		</main>
 		<footer></footer>
 		<script src="scripts/index.js"></script>
+		<script src="scripts/experience.js"></script>
 	</body>
 </html>
