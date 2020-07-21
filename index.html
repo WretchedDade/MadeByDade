@@ -8,6 +8,11 @@
 
 		<link rel="stylesheet" href="styles/generated/main.css" />
 		<link rel="stylesheet" href="styles/generated/index.css" />
+
+		<script
+			src="https://kit.fontawesome.com/dc6ad0784b.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body class="font-sans bg-gray-100">
 		<header>
@@ -24,26 +29,18 @@
 					Contact Me
 				</a>
 			</nav>
-			<button id="nav-toggle" class="sm:hidden icon-button mx-2 z-10">
-				<!-- Icons are from the Zondicons icon pack available here: http://www.zondicons.com/ -->
-				<svg
+			<button
+				id="nav-toggle"
+				class="sm:hidden icon-button h-10 w-10 z-10 box-content"
+			>
+				<i
 					id="nav-menu-icon"
-					class="fill-current h-6 w-6"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 20 20"
-				>
-					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-				</svg>
-				<svg
+					class="fill-current fas fa-bars fa-2x fa-fw"
+				></i
+				><i
 					id="nav-close-icon"
-					class="hidden fill-current h-6 w-6"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 20 20"
-				>
-					<path
-						d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
-					/>
-				</svg>
+					class="fill-current fas fa-window-close fa-2x fa-fw hidden"
+				></i>
 			</button>
 
 			<div class="w-full min-h-48 pt-6">
@@ -53,9 +50,8 @@
 					<h2
 						class="text-lg leading-tight p-2 my-6 sm:my-0 rounded-md md:rounded-br-none md:bg-opacity-25 md:w-2/3 lg:w-1/2"
 					>
-						Hi, I'm Dade Cook. I enjoy writing well-designed and
-						tested software that improves the experience of the
-						maintainers and users.
+						Hi, I'm Dade Cook. I write and test full-stack software
+						that solves problems and makes lives easier.
 					</h2>
 					<div>
 						<div class="avatar overflow-hidden">

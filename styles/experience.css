@@ -1,0 +1,169 @@
+body {
+	@apply bg-gray-200;
+}
+
+#timeline {
+	@apply grid;
+	@apply col-gap-4;
+	@apply grid-cols-9;
+	@apply mt-10;
+	@apply px-4;
+}
+
+#timeline .content-column {
+	@apply flex;
+	@apply flex-wrap;
+	@apply items-center;
+
+	@apply col-span-4;
+}
+
+#timeline .time-title {
+	@apply text-lg;
+	@apply leading-tight;
+	@apply w-full;
+	@apply py-2;
+	@apply mb-24;
+}
+
+#timeline .content-column.left .time-title {
+	@apply text-right;
+}
+
+#timeline .content-column.right .time-title {
+	@apply text-left;
+}
+
+#timeline .line-column {
+	@apply flex;
+	@apply flex-col;
+	@apply items-center;
+	@apply col-span-1;
+}
+
+#timeline .line-column .dot {
+	@apply bg-orange-700;
+	@apply bg-opacity-75;
+	@apply h-10;
+	@apply w-10;
+	@apply rounded-full;
+
+	min-height: 2.5rem;
+	min-width: 2.5rem;
+}
+
+#timeline .line-column .line {
+	@apply bg-orange-900;
+	@apply bg-opacity-25;
+	@apply h-full;
+	@apply w-2;
+
+	min-height: 5rem;
+}
+
+#timeline .content {
+	@apply p-4;
+	@apply bg-white;
+	@apply shadow-md;
+	@apply relative;
+
+	border-radius: 1rem;
+}
+
+#timeline .content-column.left .content {
+	@apply rounded-r-none;
+}
+
+#timeline .content-column.right .content {
+	@apply rounded-l-none;
+}
+
+#timeline .content h4 {
+	@apply mb-4;
+}
+
+#timeline .content .titles {
+	@apply flex;
+	@apply justify-between;
+}
+
+#timeline .content-column.left .content .titles {
+	@apply flex-row-reverse;
+}
+
+.skills {
+	@apply hidden;
+	@apply mt-4;
+	@apply flex-wrap;
+}
+
+.skills .skill {
+	@apply flex-grow;
+	@apply items-center;
+	@apply p-2;
+	@apply m-1;
+	@apply my-2;
+	@apply text-white;
+	@apply flex;
+	@apply flex-wrap;
+	@apply rounded-md;
+	@apply bg-blue-700;
+	@apply bg-opacity-75;
+}
+
+.skills .skill:nth-child(2) {
+	@apply bg-green-700;
+	@apply bg-opacity-75;
+}
+
+.skills .skill:nth-child(3) {
+	@apply bg-orange-700;
+	@apply bg-opacity-75;
+}
+
+.skills .skill .main-skill {
+	@apply font-bold;
+	@apply tracking-wider;
+	@apply w-full;
+	@apply text-sm;
+	@apply mb-2;
+}
+
+.skills .skill .sub-skill {
+	@apply text-xs;
+	@apply px-2;
+	@apply my-1;
+	@apply mr-2;
+	@apply bg-white;
+	@apply bg-opacity-25;
+	@apply rounded-full;
+}
+
+@screen md {
+	#timeline .line-column {
+		@apply col-span-1;
+	}
+
+	.skills {
+		@apply block;
+	}
+}
+
+@screen lg {
+	#timeline {
+		@apply col-gap-0;
+		@apply grid-cols-11;
+	}
+
+	#timeline .content-column {
+		@apply col-span-5;
+	}
+
+	#timeline .line-column {
+		@apply col-span-1;
+	}
+
+	.skills {
+		@apply flex;
+	}
+}
