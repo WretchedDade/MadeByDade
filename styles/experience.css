@@ -104,7 +104,7 @@ html:not([data-scroll='0']) #scroll-to-top {
 
 .skills .skill {
 	@apply flex-grow;
-	@apply items-center;
+	@apply items-end;
 	@apply p-2;
 	@apply m-1;
 	@apply my-2;
