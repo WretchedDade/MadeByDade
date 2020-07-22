@@ -35,3 +35,28 @@ textarea:focus {
 	@apply bg-white;
 	@apply border-gray-500;
 }
+
+button[type='submit'] {
+	@apply transition-colors;
+	@apply duration-200;
+	@apply ease-linear;
+}
+
+button[type='submit']:hover {
+	@apply bg-blue-500;
+}
+
+a.social-icon {
+	@apply leading-tight;
+	@apply text-lg;
+	@apply p-1;
+	@apply ml-2;
+	@apply text-blue-900;
+	@apply transition-colors;
+	@apply duration-200;
+	@apply ease-linear;
+}
+
+a.social-icon:hover {
+	@apply text-orange-500;
+}

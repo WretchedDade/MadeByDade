@@ -31,7 +31,7 @@ header {
 }
 
 main {
-	min-height: calc(100vh - 80px - 40px);
+	min-height: calc(100vh - 80px - 180px);
 }
 
 nav {
@@ -60,11 +60,27 @@ a.nav-link {
 	@apply border-transparent;
 
 	@apply text-lg;
+
+	transition: all 200ms linear;
 }
 
 a.nav-link:hover {
 	@apply bg-opacity-25;
-	@apply border-blue-900;
+}
+
+a.nav-link.icon:hover {
+	@apply bg-opacity-100;
+	@apply text-green-700;
+	@apply border-green-700;
+}
+
+a.nav-link.icon {
+	@apply px-2;
+	@apply my-0;
+	@apply mx-1;
+	@apply rounded-full;
+	@apply border-4;
+	@apply z-40;
 }
 
 button.icon-button {
@@ -88,12 +104,13 @@ i.hidden {
 	@apply hidden;
 }
 
-@screen sm {
+@screen md {
 	header {
 		@apply justify-around;
 	}
 
 	nav {
+		@apply flex-row;
 		@apply relative;
 
 		@apply justify-center;
@@ -109,14 +126,13 @@ i.hidden {
 	}
 
 	a.nav-link {
-		@apply self-end px-2 my-0 mx-1 border-l-0 border-b-4;
+		@apply self-end;
+		@apply px-2;
+		@apply my-0;
+		@apply mx-1;
+		@apply border-4;
+		@apply rounded;
 	}
-}
-
-footer {
-	@apply bg-blue-900;
-
-	min-height: 40px;
 }
 
 @tailwind components;

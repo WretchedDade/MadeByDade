@@ -53,3 +53,34 @@ textarea:focus {
   border-color: #a0aec0;
   border-color: rgba(160, 174, 192, var(--border-opacity));
 }
+
+button[type='submit'] {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+button[type='submit']:hover {
+  --bg-opacity: 1;
+  background-color: #4299e1;
+  background-color: rgba(66, 153, 225, var(--bg-opacity));
+}
+
+a.social-icon {
+  line-height: 1.25;
+  font-size: 1.125rem;
+  padding: 0.25rem;
+  margin-left: 0.5rem;
+  --text-opacity: 1;
+  color: #2a4365;
+  color: rgba(42, 67, 101, var(--text-opacity));
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+a.social-icon:hover {
+  --text-opacity: 1;
+  color: #ed8936;
+  color: rgba(237, 137, 54, var(--text-opacity));
+}
