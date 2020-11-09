@@ -11,20 +11,20 @@
 		<link rel="stylesheet" href="styles/generated/main.css" />
 		<link rel="stylesheet" href="styles/generated/index.css" />
 
+		<link rel="stylesheet" href="styles/generated/contact.css" />
+
+		<link rel="stylesheet" href="styles/generated/experience.css" />
+
 		<script src="https://kit.fontawesome.com/dc6ad0784b.js" crossorigin="anonymous"></script>
 	</head>
-	<body class="deathstar">
+	<body>
 		<header>
 			<h1 class="text-2xl z-10"><a href="/">Made by Dade</a></h1>
 
-			<nav class="hidden md:flex">
-				<a href="/experience.html" class="nav-link">
-					Professional Experience
-				</a>
-				<a href="/contact.html" class="nav-link">
-					Contact Me
-				</a>
-			</nav>
+			<!-- <nav class="hidden md:flex">
+				<a href="/experience.html" class="nav-link"> Professional Experience </a>
+				<a href="/contact.html" class="nav-link"> Contact Me </a>
+			</nav> -->
 			<div class="hidden sm:flex">
 				<a target="_blank" class="nav-link icon" href="https://twitter.com/WretchedDade" title="@WretchedDade">
 					<i class="fab fa-fw fa-twitter"></i>
@@ -51,8 +51,8 @@
 					<h2
 						class="text-lg leading-tight p-2 my-6 sm:my-0 rounded-md md:rounded-br-none md:bg-opacity-25 md:w-2/3 lg:w-1/2"
 					>
-						Hi, my name is Dade Cook and I love building web applications. More than that though I love
-						learning new things and growing as a developer.
+						Hi, my name is Dade Cook and I build fast and user-friendly full-stack applications that meet
+						the demands of both users and business stakeholders.
 					</h2>
 					<div>
 						<div class="avatar overflow-hidden">
@@ -62,7 +62,229 @@
 				</div>
 			</div>
 		</header>
-		<main></main>
+		<main>
+			<div id="contact-form" class="py-8 flex items-center justify-center">
+				<div class="bg-white shadow-lg p-4 w-2/3">
+					<div class="flex justify-between items-center px-4 border-b-2 border-blue-700">
+						<h2 class="text-2xl leading-loose">Get in Touch!</h2>
+						<div class="flex">
+							<a
+								target="_blank"
+								class="social-icon"
+								href="https://twitter.com/WretchedDade"
+								title="@WretchedDade"
+							>
+								<i class="fab fa-fw fa-twitter"></i>
+							</a>
+							<a
+								target="_blank"
+								class="social-icon"
+								href="https://github.com/WretchedDade"
+								title="WretchedDade"
+							>
+								<i class="fab fa-fw fa-github"></i>
+							</a>
+							<a
+								target="_blank"
+								class="social-icon"
+								href="https://www.linkedin.com/in/dadecook/"
+								title="Dade Cook"
+							>
+								<i class="fab fa-fw fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+					<form
+						netlify
+						method="POST"
+						action="contacted.html"
+						name="Contact Me"
+						class="w-full mt-4 p-4"
+						subject="Portfolio Contact Me"
+					>
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full md:w-1/2 px-3 mb-6 lg:mb-0">
+								<label for="name"> Name * </label>
+								<input required id="name" type="text" name="Name" placeholder="Obi-Wan Kenobi" />
+							</div>
+							<div class="w-full md:w-1/2 px-3">
+								<label for="email"> Email </label>
+								<input id="email" type="text" name="Email" placeholder="ObiWan@Kenobi.com" />
+								<p class="helper-text">This will help me get back to you.</p>
+							</div>
+						</div>
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3">
+								<label for="message"> Message * </label>
+								<textarea
+									required
+									rows="3"
+									id="message"
+									name="Message"
+									class="resize-none"
+									placeholder="“Only a Sith deals in absolutes.”"
+								></textarea>
+							</div>
+						</div>
+						<div class="flex justify-end">
+							<button
+								type="submit"
+								class="text-white py-2 px-4 rounded-md bg-blue-700 outline-none focus:outline-none"
+							>
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div id="timeline">
+				<div class="content-column left">
+					<h3 class="time-title">Now</h3>
+					<div class="content">
+						<div class="titles">
+							<h4 class="text-blue-700 text-xs"><i class="fas fa-clock mr-2"></i>Mar 2019 - Now</h4>
+
+							<h4>.Net Analyst II at Rural Sourcing</h4>
+						</div>
+
+						<p class="text-sm">
+							I led an ever-changing team of between 4-9 developers in building out a replacement customer
+							portal for Service Finance Company (SFC). At the request of SFC we built the back-end as a
+							.Net Core Web App and the front-end using ReactJS. Most of the team was not familiar with
+							these technologies which meant helping them learn it while learning it myself.
+						</p>
+
+						<div class="skills">
+							<div class="skill">
+								<p class="main-skill">ReactJS</p>
+								<p class="sub-skill">Typescript</p>
+								<p class="sub-skill">Redux</p>
+								<p class="sub-skill">Material-UI</p>
+								<p class="sub-skill">Storybook</p>
+								<p class="sub-skill">Jest</p>
+								<p class="sub-skill">React Testing Library</p>
+							</div>
+							<div class="skill">
+								<p class="main-skill">.Net Core</p>
+								<p class="sub-skill">MediatR</p>
+								<p class="sub-skill">MSTest</p>
+								<p class="sub-skill">Swagger</p>
+								<p class="sub-skill">Dependency Injection</p>
+								<p class="sub-skill">Restful and GraphQL APIs</p>
+							</div>
+							<div class="skill">
+								<p class="sub-skill">Git</p>
+								<p class="sub-skill">Git Flow</p>
+								<p class="sub-skill">Jira</p>
+								<p class="sub-skill">Bitbucket</p>
+								<p class="sub-skill">IIS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="line-column">
+					<div class="dot"></div>
+					<div class="line"></div>
+				</div>
+				<div class="content-column right"></div>
+
+				<div class="content-column left"></div>
+				<div class="line-column">
+					<div class="dot"></div>
+					<div class="line"></div>
+				</div>
+				<div class="content-column right">
+					<h3 class="time-title">May 2019</h3>
+					<div class="content">
+						<div class="titles">
+							<h4 class="text-blue-700 text-xs"><i class="fas fa-clock mr-2"></i>Mar 2018 - Mar 2019</h4>
+
+							<h4>.Net Analyst I at Rural Sourcing</h4>
+						</div>
+
+						<p class="text-sm">
+							I joined a team that was struggling to meet an upcoming deadline. They were updating a web
+							application that conformed to a philosophy known as the Entrepeneurial Operating System
+							(EOS). The original app was written using AngularJS and express and was incrementally being
+							replaced by the latest version of Angular (Angular 8) and AWS Lambda functions written using
+							the serverless framework and Node.JS.
+						</p>
+
+						<div class="skills">
+							<div class="skill">
+								<p class="main-skill">Node.JS</p>
+								<p class="sub-skill">Serverless</p>
+								<p class="sub-skill">AWS Lambda</p>
+								<p class="sub-skill">AWS S3</p>
+								<p class="sub-skill">MongoDB</p>
+								<p class="sub-skill">Stripe</p>
+							</div>
+							<div class="skill">
+								<p class="sub-skill">Git</p>
+								<p class="sub-skill">Jira</p>
+								<p class="sub-skill">Bitbucket</p>
+								<p class="sub-skill">Netlify</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-column left">
+					<h3 class="time-title">March 2018</h3>
+					<div class="content">
+						<div class="titles">
+							<h4 class="text-blue-700 text-xs"><i class="fas fa-clock mr-2"></i>Nov 2016 - Feb 2018</h4>
+
+							<h4>.Net Associate Analyst at Rural Sourcing</h4>
+						</div>
+
+						<p class="text-sm">
+							I started my journey as a developer when I join a large team working for Hagerty Insurance
+							Agency. Hagerty had a wide array of .Net Framework applications, from WinForms to ASP.Net
+							MVC. I joined a team that worked across all of the applications to make enhancements to
+							their quoting and application process. Of which, the most impactful enhancement was
+							rewriting their rules engine to be more maintainable and support more complex scenarios.
+						</p>
+
+						<div class="skills">
+							<div class="skill">
+								<p class="main-skill">.Net Framework</p>
+								<p class="sub-skill">WebForms</p>
+								<p class="sub-skill">WinForms</p>
+								<p class="sub-skill">ASP .Net MVC</p>
+								<p class="sub-skill">SQL Server</p>
+								<p class="sub-skill">Entity Framework</p>
+								<p class="sub-skill">Mere Mortals</p>
+							</div>
+							<div class="skill">
+								<p class="sub-skill">Perforce</p>
+								<p class="sub-skill">Jira</p>
+								<p class="sub-skill">Confluence</p>
+								<p class="sub-skill">Team City</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="line-column">
+					<div class="dot"></div>
+					<div class="line"></div>
+				</div>
+				<div class="content-column right"></div>
+
+				<div class="content-column left"></div>
+				<div class="line-column">
+					<div class="dot"></div>
+				</div>
+				<div class="content-column right">
+					<h3 class="time-title">November 2016</h3>
+				</div>
+			</div>
+			<a id="scroll-to-top" href="#top" class="text-green-700 opacity-0 fixed bottom-0 right-0 m-4">
+				<i class="fas fa-chevron-circle-up fa-3x fa-fw"></i>
+			</a>
+		</main>
 		<script src="scripts/index.js"></script>
+		<script src="scripts/experience.js"></script>
 	</body>
 </html>
