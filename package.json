@@ -22,7 +22,7 @@
 		"build": "run-p build:css build:scripts"
 	},
 	"dependencies": {
-		"postcss": "^7.0.32",
+		"postcss": "^8.2.10",
 		"tailwindcss": "^1.4.6"
 	},
 	"devDependencies": {
